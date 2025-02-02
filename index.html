@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
+  <link rel="icon" type="image/x-icon" href="./images/fevicon.png">
+</head>
+<body>
+  <!-- header start -->
+  <header class="border-bottom border-color-light-white">
+    <div class="container-sm px-0 py-2">
+      <nav class="navbar navbar-expand-lg">
+        <div class="row align-items-center w-100 d-flex justify-content-sm-between">
+          <div class="col-6 col-md-3">
+            <a class="navbar-brand" href="http://127.0.0.1:5500/">
+              <img src="./images/Logo.png" alt="Logo" class="img-fluid mt-1">
+            </a>
+          </div>
+          <div class="col-6 col-md-3 text-end d-lg-none">
+            <span class="me-3">
+              <i class="fa-solid fa-magnifying-glass mt-2 text-white"></i>
+            </span>
+            <button class="navbar-toggler custom-toggler border-0" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="col-6 col-lg-6 collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto  gap-4">
+              <li class="nav-item dropdown">
+                <a class="nav-link text-uppercase downarrow active fw-semibold" href="#" id="navbarDropdownHome"
+                  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Home
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <li><a class="dropdown-item active" href="#">Home 01</a></li>
+                  <li><a class="dropdown-item" href="#">Home 02 - Dark Menu</a></li>
+                  <li><a class="dropdown-item" href="#">Home 03</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link text-uppercase downarrow fw-semibold text-white text-primary-hover" href="#"
+                  id="navbarDropdownHome" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  pages
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                  <li><a class="dropdown-item" href="#">About Us</a></li>
+                  <li><a class="dropdown-item" href="#">Our History</a></li>
+                  <li><a class="dropdown-item" href="#">Pricing</a></li>
+                  <li><a class="dropdown-item" href="#">FAQ's</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Our Team</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Our Team</a></li>
+                      <li><a class="dropdown-item" href="#">Team Details</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Testimonials</a></li>
+                  <li><a class="dropdown-item" href="#">Clients</a></li>
+                  <li><a class="dropdown-item" href="#">Others</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Error 404 Page</a></li>
+                      <li><a class="dropdown-item" href="#">Terms and Conditions</a></li>
+                      <li><a class="dropdown-item" href="#">Privacy Policy</a></li>
+
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link text-uppercase downarrow fw-semibold text-white text-primary-hover" href="#"
+                  id="navbarDropdownHome" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                  <li><a class="dropdown-item" href="#">All Services</a></li>
+                  <li><a class="dropdown-item" href="#">Warehousing</a></li>
+                  <li><a class="dropdown-item" href="#">Air Freight</a></li>
+                  <li><a class="dropdown-item" href="#">Ocen Freight</a></li>
+                  <li><a class="dropdown-item" href="#">Road Freight</a></li>
+                  <li><a class="dropdown-item" href="#">Rail Freight</a></li>
+                  <li><a class="dropdown-item" href="#">Logistic Solution</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link text-uppercase downarrow fw-semibold text-white text-primary-hover" href="#"
+                  id="navbarDropdownHome" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  projects
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                  <li><a class="dropdown-item" href="#">Projects Grid</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">2 Columns</a></li>
+                      <li><a class="dropdown-item" href="#">3 Columns - standard</a></li>
+                      <li><a class="dropdown-item" href="#">4 Columns</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Project Details</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link text-uppercase downarrow fw-semibold text-white text-primary-hover" href="#"
+                  id="navbarDropdownHome" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Blog
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                  <li><a class="dropdown-item" href="#">Blog Default</a></li>
+                  <li><a class="dropdown-item" href="#">Blog Grid</a></li>
+                  <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link text-uppercase fw-semibold text-white" href="#" id="navbarDropdownHome" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 text-end right-section">
+          <ul class="d-flex justify-content-end navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/" id="search-toggle">
+                <span class="me-3">
+                  <i class="fa-solid fa-magnifying-glass mt-2 text-white"></i>
+                </span>
+              </a>
+            </li>
+            <li class="d-none d-xl-inline-block"><a class="primary-btn md text-white bg-color" href="/"><span>Free
+            Quote</span></a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- header end -->
+  <!-- Banner start -->
+  <section>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">
+      <div class="carousel-inner background-carousel">
+        <div class="carousel-item carousel-item1 active">
+          <div class="carousel-overlay"></div>
+          <div class="carousel-caption d-md-block">
+            <h1>Reliable & express <br> logistics solutions</h1>
+            <a class="primary-btn md text-white bg-color" href="/"><span>get started</span></a>
+          </div>
+        </div>
+        <div class="carousel-item carousel-item2">
+          <div class="carousel-overlay"></div>
+          <div class="carousel-caption d-md-block">
+            <h1>Transport your <br> cargo everywhere</h1>
+            <a class="primary-btn md text-white bg-color" href="/"><span>get started</span></a>
+
+          </div>
+        </div>
+        <div class="carousel-item carousel-item3">
+          <div class="carousel-overlay"></div>
+          <div class="carousel-caption d-md-block">
+            <h1>Provide simple <br> warehousing</h1>
+
+            <a class="primary-btn md text-white bg-color" href="/"><span>get started</span></a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev slider-btn" type="button" data-bs-target="#carouselExampleFade"
+        data-bs-slide="prev">
+        <i class="fa-solid fa-arrow-left bg-color"></i>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next slider-btn" type="button" data-bs-target="#carouselExampleFade"
+        data-bs-slide="next">
+        <i class="fa-solid fa-arrow-right bg-color"></i>
+        <span class="visually-hidden">Next</span>
+
+      </button>
+    </div>
+  </section>
+  <!-- Banner end -->
+  <!-- Banner-cards-section-start -->
+  <section>
+    <div class="custom-class">
+      <div class="container-sm">
+        <div class="row text-center mx-lg-4">
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card text-center border-radius-5 h-100 border-0 shadow-sm p-5 custom-card">
+              <div class="feature-number">
+                <span class="text-dark fw-bolder">01</span>
+              </div>
+              <div class="card-body">
+                <h3 class="info-color fs-5 fw-bolder">Packaging & Storage</h3>
+                <p class="display-28 text-light">
+                  We understand the <br> importance of timely delivery.
+                </p>
+                <p class="text-uppercase fw-bolder d-inline-block primary-color second-para">
+                  94% Score
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card text-center border-radius-5 h-100 border-0 shadow-sm p-5 custom-card">
+              <div class="feature-number">
+                <span class="text-dark fw-bolder">02</span>
+              </div>
+              <div class="card-body">
+                <h3 class="info-color fs-5 fw-bolder">Safety & Quality</h3>
+                <p class="display-28 text-light">
+                  We understand the <br> importance of timely delivery.
+                </p>
+                <p class="text-uppercase fw-bolder d-inline-block primary-color second-para">
+                  96% Score
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card text-center border-radius-5 h-100 border-0 shadow-sm p-5 custom-card">
+              <div class="feature-number">
+                <span class="text-dark fw-bolder">03</span>
+              </div>
+              <div class="card-body">
+                <h3 class="info-color fs-5 fw-bolder">Delivery On Time</h3>
+                <p class="display-28 text-light">
+                  We understand the <br> importance of timely delivery.
+                </p>
+                <p class="text-uppercase fw-bolder d-inline-block primary-color second-para">
+                  98% Score
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Banner-cards-section-end -->
+  <!-- more-about-section-start -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 lh-4 pb-5 hidden">
+          <div class="left-content">
+            <span class="primary-color text-uppercase fw-bold lh-1 display-30 mb-5">
+              01 _ more about us
+            </span>
+            <h2 class="heading-color display-4 fw-bolder lh-1 mt-2 mb-5">
+              We get solutions to grow transport.
+            </h2>
+          </div>
+          <div class="about-sec-service d-flex gap-3 mt-4 mb-4">
+            <i class="fa-solid fa-check primary-color"></i>
+            <div class="about-sec-service-list">
+              <p class="mb-0 w-xl-70 w-xxl-55 text-light">
+                Is always more than our expectation <br /> due to your support.
+              </p>
+            </div>
+
+          </div>
+          <div class="about-sec-service d-flex gap-3 mt-4 mb-4">
+            <i class="fa-solid fa-check primary-color"></i>
+            <div class="about-sec-service-list">
+              <p class="mb-0 w-xl-70 w-xxl-55 text-light">
+                We guarantee trusted service for us to <br> grow more around the world.
+              </p>
+            </div>
+
+          </div>
+          <div class="about-btn-sec mt-4 mb-3 gap-4 d-flex">
+            <a class="primary-btn md text-white bg-color" href="/"><span>About Company</span></a>
+            <a href="/" class="link align-items-center d-flex text-uppercase display-30 text-primary-hover">How we
+              work</a>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 text-center">
+          <div class="right-image">
+            <img src="./images/About.jpg" alt="About" class="img-fluid rounded shadow" />
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- more-about-section-end -->
+  <!-- hover-cards-start -->
+  <section>
+    <div class="container mt-5 mb-5 text-center hidden">
+      <div class="row">
+        <div class="col-12 col-sm-8 col-md-6 col-xl-3 mt-4 mx-auto">
+          <div class="card-style04">
+            <img src="./images/service-11.jpg" alt="Card Image">
+            <div class="opacity-light"></div>
+            <div class="card-overlay"></div>
+            <div class="card-content">
+              <div class="card-custom-1 text-start">
+                <span class="text-white d-block mb-2 position-relative z-index-1">01</span>
+                <h5 class="fw-bolder text-white mt-2 fs-2 text-primary-hover"><a href="#"
+                    class="text-white text-decoration-none">Warehousing</a></h5>
+                <div class="card-hover-icon">
+                  <img src="./images/icon-10.png" alt="Icon" width="50">
+                </div>
+              </div>
+              <div class="card-data">
+                <p class="card-text">It must be aligned within a firm to have the most efficient effect.</p>
+                <a href="/"
+                  class="link align-items-center d-flex text-uppercase text-primary-hover text-white display-30 fw-semibold">Read
+                  More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-8 col-md-6 col-xl-3 mt-4 mx-auto">
+          <div class="card-style04">
+            <img src="./images/service-12.jpg" alt="Card Image">
+            <div class="opacity-light"></div>
+            <div class="card-overlay"></div>
+            <div class="card-content">
+              <div class="card-custom-1 text-start">
+                <span class="text-white d-block mb-2 position-relative z-index-1">02</span>
+                <h5 class="fw-bolder text-white mt-2 fs-2 text-primary-hover"><a href="#"
+                    class="text-white text-decoration-none">Air Freight</a></h5>
+                <div class="card-hover-icon">
+                  <img src="./images/icon-11.png" alt="Icon" width="50">
+                </div>
+              </div>
+              <div class="card-data">
+                <p class="card-text">It must be aligned within a firm to have the most efficient effect.</p>
+                <a href="/"
+                  class="link align-items-center d-flex text-uppercase text-primary-hover text-white display-30 fw-semibold">Read
+                  More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-8 col-md-6 col-xl-3 mt-4 mx-auto">
+          <div class="card-style04">
+            <img src="./images/service-13.jpg" alt="Card Image">
+            <div class="opacity-light"></div>
+            <div class="card-overlay"></div>
+            <div class="card-content">
+              <div class="card-custom-1 text-start">
+                <span class="text-white d-block mb-2 position-relative z-index-1">03</span>
+                <h5 class="fw-bolder text-white mt-2 fs-2 text-primary-hover"><a href="#"
+                    class="text-white text-decoration-none">Ocean Freight</a></h5>
+                <div class="card-hover-icon">
+                  <img src="./images/icon-12.png" alt="Icon" width="50">
+                </div>
+              </div>
+              <div class="card-data">
+                <p class="card-text">It must be aligned within a firm to have the most efficient effect.</p>
+                <a href="/"
+                  class="link align-items-center d-flex text-uppercase text-primary-hover text-white display-30 fw-semibold">Read
+                  More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-8 col-md-6 col-xl-3 mt-4 mx-auto">
+          <div class="card-style04">
+            <img src="./images/service-14.jpg" alt="Card Image">
+            <div class="opacity-light"></div>
+            <div class="card-overlay"></div>
+            <div class="card-content">
+              <div class="card-custom-1 text-start">
+                <span class="text-white d-block mb-2 position-relative z-index-1">04</span>
+                <h5 class="fw-bolder text-white mt-2 fs-2 text-primary-hover"><a href="#"
+                    class="text-white text-decoration-none">Road Freight</a></h5>
+                <div class="card-hover-icon">
+                  <img decoding="async" src="./images/icon-13.png" alt="Icon" width="50">
+                </div>
+              </div>
+              <div class="card-data">
+                <p class="card-text">It must be aligned within a firm to have the most efficient effect.</p>
+                <a href="/"
+                  class="link align-items-center d-flex text-uppercase text-primary-hover text-white display-30 fw-semibold">Read
+                  More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- hover-cards-end -->
+  <!-- Logistics workflow sec start -->
+  <section class="py-5 hidden">
+    <div class="container">
+      <div class="row justify-content-center text-center my-5">
+        <div class="col-12">
+          <span class="primary-color text-uppercase fw-bold lh-1 display-30 d-block mb-2">
+            02 _ Work Process
+          </span>
+          <h2 class="heading-color display-4 fw-bolder lh-1 mt-2 mb-5">
+            Logistics Workflow
+          </h2>
+        </div>
+      </div>
+      <div class="workflow-section hidden mb-4">
+      <div class="row justify-content-center g-4">
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+          <div class="workflow-step text-center position-relative">
+            <div class="step-number text-white">01</div>
+            <img src="./images/process-01.jpg" alt="Order Processing" class="step-image rounded-circle mb-3">
+            <h4 class="step-title fs-6 fw-bolder heading-color">Order Processing</h4>
+            <p class="step-text text-light">The logistics process begins with the receipt of customer...</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+          <div class="workflow-step text-center position-relative">
+            <div class="step-number text-white">02</div>
+            <img src="./images/process-02.jpg" alt="Warehousing" class="step-image rounded-circle mb-3">
+            <h4 class="step-title fs-6 fw-bolder heading-color">Warehousing</h4>
+            <p class="step-text text-light">Goods that are ready for shipment are stored in warehouses or...</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+          <div class="workflow-step text-center position-relative">
+            <div class="step-number text-white">03</div>
+            <img src="./images/process-03.jpg" alt="Order Tracking" class="step-image rounded-circle mb-3">
+            <h4 class="step-title fs-6 fw-bolder heading-color">Order Tracking</h4>
+            <p class="step-text text-light">Real-time tracking systems are used to monitor the...</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+          <div class="workflow-step text-center position-relative">
+            <div class="step-number text-white">04</div>
+            <img src="./images/process-04.jpg" alt="Product Delivery" class="step-image rounded-circle mb-3">
+            <h4 class="step-title fs-6 fw-bolder heading-color">Product Delivery</h4>
+            <p class="step-text text-light">In the final stage of logistics services.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- Logistics workflow sec end -->
+  <!-- products-transport-strat -->
+   <section>
+    <div class="container-fluid py-5 hidden" id="counterSection">
+      <div class="row">
+          <div class="col-12 Transport-sec">
+              <div class="counter-section">
+                  <div class="counter-box" data-aos="fade-up">
+                      <span class="counter heading-color fs-2 fw-bolder" data-target="426">0</span>
+                      <h5 class="heading-color fw-bolder fs-5">Products Transport</h5>
+                  </div>
+                  <div class="counter-box1" data-aos="fade-up" data-aos-delay="200">
+                      <small class="text-white display-28">Toll Free call</small>
+                      <h5 class="mb-0 text-white fw-bolder">(+44) 123 456 789</h5>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  </section>
+   <!-- products-transport-end -->
+    <!-- what-people-ask-sec-start -->
+    <section class="testimonials-section py-5 my-5">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-5">
+                  <div class="left-content">
+                    <span class="primary-color text-uppercase fw-bold lh-1 display-30 mb-5">
+                      03 _ what people ask
+                    </span>
+                    <h2 class="heading-color display-4 fw-bolder lh-1 mt-2 mb-5">
+                      What our clients say about us
+                    </h2>
+                  </div>
+              </div>
+              <div class="col-md-7">
+                  <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <div class="testimonial-card">
+                                  <div class="testimonial-img">
+                                      <img src="./images/avatar-05.jpg" alt="User 1">
+                                  </div>
+                                  <div class="testimonial-text">
+                                      <p>"Their service is top-notch! Highly recommended."</p>
+                                      <h6>John Horrocks</h6>
+                                      <p class="text-muted small">Loadmaster</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                              <div class="testimonial-card">
+                                  <div class="testimonial-img">
+                                      <img src="./images/avatar-06.jpg" alt="User 2">
+                                  </div>
+                                  <div class="testimonial-text">
+                                      <p>"Amazing experience with their team!"</p>
+                                      <h6>Sarah Williams</h6>
+                                      <p class="text-muted small">Customer</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                              <div class="testimonial-card">
+                                  <div class="testimonial-img">
+                                      <img src="./images/avatar-07.jpg" alt="User 3">
+                                  </div>
+                                  <div class="testimonial-text">
+                                      <p>"Would definitely work with them again!"</p>
+                                      <h6>Michael Scott</h6>
+                                      <p class="text-muted small">Business Owner</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>  
+          </div>
+      </div>
+  </section>
+    <!-- what-people-ask-sec-end -->
+     <!-- updates-articles-strat -->
+     <section class="py-5 hidden">
+      <div class="container">
+        <div class="row justify-content-center text-center my-5">
+          <div class="col-12">
+            <span class="primary-color text-uppercase fw-bold lh-1 display-30 d-block mb-2">
+              04 _ Work Process
+            </span>
+            <h2 class="heading-color display-4 fw-bolder lh-1 mt-2 mb-5">
+              Updated articles
+            </h2>
+          </div>
+        </div>
+        <div class="workflow-section hidden mb-4">
+          <div class="row justify-content-center g-4">
+            <div class="col-sm-6 col-xl-2 mt-3">
+              <div class="card">
+                <div class="card-img">
+                  <img src="https://kargonwp.websitelayout.net/wp-content/uploads/2024/12/blog-01.jpg" alt="The advantages of a digital supply strategy">
+                  <div class="tags"><a href="#">Logistic</a></div>
+                </div>
+            
+                <div class="card-body">
+                  <h4><a href="#">The advantages of a digital supply strategy</a></h4>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting...</p>
+                  <div class="author-info">
+                    <span class="date">December 10, 2024</span>
+                    <span class="author"><a href="#">admin</a></span>
+                    <span class="likes"><i class="fa-regular fa-message text-primary"></i> 1</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-12 col-sm-6 col-md-4 col-xl-2">
+              <div class="card text-center position-relative">
+                <div class="card-body">
+                  <div class="step-number text-white bg-primary rounded-circle d-inline-block mb-3">02</div>
+                  <img src="./images/process-02.jpg" alt="Warehousing" class="step-image rounded-circle mb-3">
+                  <h4 class="step-title fs-6 fw-bolder heading-color">Warehousing</h4>
+                  <p class="step-text text-light">Goods that are ready for shipment are stored in warehouses or...</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-xl-2">
+              <div class="card text-center position-relative">
+                <div class="card-body">
+                  <div class="step-number text-white bg-primary rounded-circle d-inline-block mb-3">03</div>
+                  <img src="./images/process-03.jpg" alt="Order Tracking" class="step-image rounded-circle mb-3">
+                  <h4 class="step-title fs-6 fw-bolder heading-color">Order Tracking</h4>
+                  <p class="step-text text-light">Real-time tracking systems are used to monitor the...</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-xl-2">
+              <div class="card text-center position-relative">
+                <div class="card-body">
+                  <div class="step-number text-white bg-primary rounded-circle d-inline-block mb-3">04</div>
+                  <img src="./images/process-04.jpg" alt="Product Delivery" class="step-image rounded-circle mb-3">
+                  <h4 class="step-title fs-6 fw-bolder heading-color">Product Delivery</h4>
+                  <p class="step-text text-light">In the final stage of logistics services.</p>
+                </div>
+              </div>
+            </div>
+          </div>          
+      </div>
+      </div>
+    </section>
+     <!-- updates-articles-end -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggler = document.querySelector(".navbar-toggler");
+
+      toggler.addEventListener("click", function () {
+        this.classList.toggle("open");
+      });
+    });
+  </script>
+  <script>
+    window.addEventListener("scroll", function () {
+      const header = document.querySelector("header");
+      if (window.scrollY > 50) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const elements = document.querySelectorAll(".hidden");
+
+      const scrollHandler = () => {
+        elements.forEach((el) => {
+          const rect = el.getBoundingClientRect();
+          if (rect.top < window.innerHeight - 100) {
+            el.classList.add("animate-move-up");
+          }
+        });
+      };
+
+      window.addEventListener("scroll", scrollHandler);
+      scrollHandler();
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".counter").forEach(counter => {
+        const target = +counter.dataset.target;
+        let count = 0, speed = target / 100;
+  
+        const updateCounter = () => {
+          count < target ? (counter.innerText = Math.floor(count += speed), requestAnimationFrame(updateCounter)) : counter.innerText = target;
+        };
+  
+        new IntersectionObserver((entries, observer) => {
+          if (entries[0].isIntersecting) {
+            updateCounter();
+            observer.unobserve(counter);
+          }
+        }, { threshold: 0.5 }).observe(counter);
+      });
+    });
+  </script>
+<script>
+  let currentIndex = 0;
+function changeSlide() {
+  const slides = document.querySelectorAll(".slide");
+  const totalSlides = slides.length;
+  slides.forEach((slide, index) => {
+    slide.classList.remove("active"); 
+    if (index === currentIndex) {
+      slide.classList.add("active"); 
+    }
+  });
+  currentIndex = (currentIndex + 1) % totalSlides; 
+}
+setInterval(changeSlide, 3000);
+</script>
+</body>
+</html>

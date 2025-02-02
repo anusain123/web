@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hover Cards with Animation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .card-style04 {
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      transition: transform 0.3s ease, background-size 0.3s ease;
+    }
+
+    .card-style04:hover {
+      transform: scale(1.05);
+    }
+
+    .card-style04 img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.5s ease;
+    }
+
+    .card-style04:hover img {
+      transform: scale(1.2);
+    }
+
+    .opacity-light {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      opacity: 0.3;
+      top: 0;
+      left: 0;
+      background-color: #000;
+    }
+
+    .card-style04 .card-overlay {
+      opacity: 0;
+      position: absolute;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+      transition: opacity 0.5s ease-in-out;
+      background-color: rgba(37, 46, 56, 0.8);
+    }
+
+    .card-style04:hover .card-overlay {
+      opacity: 1;
+    }
+
+    .card-style04 .card-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .card-style04 .card-custom-1 span {
+      font-size: 1.2rem;
+      color: white;
+    }
+
+    .card-style04 .card-hover-icon {
+    position: absolute;
+    bottom: 50px;
+    margin-top: 10px;
+    transition: opacity 0.5s ease, ;
+    width: 70px;
+    }
+
+    .card-style04:hover .card-hover-icon {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+
+    .card-style04 .card-data {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.5s ease-in-out;
+      text-align: left;
+    }
+
+    .card-style04:hover .card-data {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .card-text {
+      color: #fff;
+      opacity: 0.8;
+      margin-bottom: 10px;
+    }
+
+    .btn-link-1 {
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #fff;
+      border-bottom: 2px solid #fff;
+      transition: color 0.3s ease;
+    }
+
+    .btn-link-1:hover {
+      color: #007bff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="col-12 col-sm-8 col-md-6 col-xl-3 mt-4 mx-auto">
+    <div class="card-style04">
+      <img decoding="async" src="https://kargonwp.websitelayout.net/wp-content/uploads/2024/12/service-11.jpg" alt="Card Image">
+      <div class="opacity-light"></div>
+      <div class="card-overlay"></div>
+      <div class="card-content">
+        <div class="card-custom-1">
+          <span>01</span>
+          <h5 class="font-weight-800 text-white mt-2"><a href="#" class="text-white text-decoration-none">Warehousing</a></h5>
+          <div class="card-hover-icon">
+            <img decoding="async" src="https://kargonwp.websitelayout.net/wp-content/uploads/2024/12/icon-10.png" alt="Icon" width="50">
+          </div>
+        </div>
+        <div class="card-data">
+          <p class="card-text">It must be aligned within a firm to have the most efficient effect.</p>
+          <a href="#" class="btn btn-link-1">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

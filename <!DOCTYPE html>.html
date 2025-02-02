@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Dropdown</title>
+  <style>
+    /* General styles for the dropdown menu */
+    ul.dropdown-menu {
+      font-family: Veranda, Ariel, Sans-Serif;
+      font-size: 16px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      background: #D0D0D0;
+      letter-spacing: 1px;
+    }
+
+    /* Styling each list item */
+    ul.dropdown-menu li {
+      display: block;
+      position: relative;
+      width: 200px;
+    }
+
+    /* Hiding submenus by default */
+    ul.dropdown-menu li ul.dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      margin: 0;
+      padding: 0;
+      background: #E0E0E0;
+    }
+
+    /* Link styles */
+    ul.dropdown-menu li a {
+      display: block;
+      text-decoration: none;
+      background: gray;
+      color: #fff;
+      padding: 10px 15px;
+      border-top: 1px solid #666;
+      white-space: nowrap;
+    }
+
+    /* Hover styles for links */
+    ul.dropdown-menu li a:hover {
+      background: #949494;
+    }
+
+    /* Show submenu on hover */
+    ul.dropdown-menu li:hover > ul.dropdown-menu {
+      display: block;
+    }
+
+    /* Adjusting submenu items */
+    ul.dropdown-menu li ul.dropdown-menu li {
+      width: 200px;
+    }
+
+    /* Hover styles for parent items */
+    ul.dropdown-menu li:hover > a {
+      background: #A0A0A0;
+    }
+
+    /* Hover styles for submenu items */
+    ul.dropdown-menu li ul.dropdown-menu li a:hover {
+      background: #C2C2C2;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+      <li><a class="dropdown-item" href="#">About Us</a></li>
+      <li><a class="dropdown-item" href="#">Our History</a></li>
+      <li><a class="dropdown-item" href="#">Pricing</a></li>
+      <li><a class="dropdown-item" href="#">FAQ's</a></li>
+      <li>
+        <a class="dropdown-item" href="#">Our Team</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Testimonials</a></li>
+          <li><a class="dropdown-item" href="#">Clients</a></li>
+        </ul>
+      </li>
+      <li><a class="dropdown-item" href="#">Testimonials</a></li>
+      <li><a class="dropdown-item" href="#">Clients</a></li>
+      <li><a class="dropdown-item" href="#">Others</a></li>
+    </ul>
+  </div>
+</body>
+</html>
