@@ -80,10 +80,16 @@
     max-width: 400px; 
   }
 }
+.articles-cards{
+  width: 100%;
+}
+.category-badge {
+  left: 210px;
+}
 }
 @media (min-width: 768px) and (max-width: 1024px) {
     .row{
-        display: flex;
+     display: flex;
     justify-content: space-between;
     margin: auto;
     }
