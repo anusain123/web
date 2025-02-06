@@ -45,6 +45,15 @@ color:#0f313a;
 .display-32{
   font-size: 1.25rem;
 }
+.display-33 {
+  font-size: 1.2rem;
+}
+.custom-font-size {
+  font-size: 5rem;
+}
+.bg-none {
+  background: none !important;
+}
 /* header start */
 header{
     position: fixed;
@@ -132,14 +141,12 @@ header.scrolled {
   header.scrolled .nav-link {
     color: #272c49!important; 
   }
-  
-  header.scrolled .navbar-brand img {
-    filter: brightness(0); 
-  }
-  
   header.scrolled .fa-magnifying-glass {
     color: #272c49!important; 
   }
+  header.scrolled .navbar-nav .nav-link.active {
+    color: #f94735!important;
+}
 /* header end */
 /* banner start */
 .carousel-item1 {
@@ -186,11 +193,6 @@ header.scrolled {
     text-align: left;
     animation: moveUp 1s ease-out;
     animation-fill-mode: both;
-}
-.carousel-caption h1 {
-    font-size: 5rem;
-    font-weight: bold;
-    margin-bottom: 30px;
 }
 .carousel-control-prev i,
 .carousel-control-next i {
@@ -613,3 +615,59 @@ header.scrolled {
     top: 7px;
 }
 /* Footer-end */
+/* ############################# Home2-Page-Css ################################### */
+/* Banner Section */
+.Transportation-Banner {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.Transportation-Banner .carousel-item {
+  background-image: url('../images/homebanner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+.Transportation-Banner .carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, #0F313A 65%);
+  opacity: 0.95;
+}
+.main-heading {
+  height: 50vh;
+  z-index: 2;
+  text-align: left;
+  color: #fff;
+}
+.carousel-item .left-text {
+  position: absolute;
+  transform: rotate(-90deg) translate(-50%, 50%);
+  transform-origin: 0 50%;
+  transition: 1s cubic-bezier(0.7, 0, 0.3, 1) !important;
+  top: 48%;
+  left: 18px;
+  z-index: 9;
+}
+.main-heading p{
+  letter-spacing: 1.2px;
+}
+.main-heading button i {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease-in-out;
+}

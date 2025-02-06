@@ -24,6 +24,9 @@
     .carousel-caption h1{
         font-size: 45px !important;
     }
+    .main-heading h1 {
+      font-size: 37px !important;
+  }
     .carousel-control-prev.slider-btn,
 .carousel-control-next.slider-btn{
     display: none !important;
@@ -68,7 +71,6 @@
     padding: 2rem; 
   }
 }
-
 @media (min-width: 768px) {
   .custom-card {
     max-width: 350px; 
@@ -109,4 +111,18 @@
   .counter-box, .counter-box1 {
       max-width: 45%;
   }
+  .main-heading {
+    height: 50vh;
+    position: absolute;
+    top: 27%;
+    /* left: 76px; */
+    z-index: 2;
+    text-align: left;
+    color: #fff;
+}
   }
+  @media (max-width: 320px) {
+    .Explore-btn {
+        font-size: 18px !important;
+    }
+}

@@ -44,7 +44,7 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
                   <li><a class="dropdown-item info-color fs-6 fw-semibold  active" href="#">Home 01</a></li>
-                  <li><a class="dropdown-item info-color fs-6 fw-semibold" href="#">Home 02 - Dark Menu</a></li>
+                  <li><a class="dropdown-item info-color fs-6 fw-semibold" href="http://127.0.0.1:5500/Home2.html">Home 02 - Dark Menu</a></li>
                   <li><a class="dropdown-item info-color fs-6 fw-semibold" href="#">Home 03</a></li>
                 </ul>
               </li>
@@ -152,14 +152,14 @@
         <div class="carousel-item carousel-item1 active">
           <div class="carousel-overlay"></div>
           <div class="carousel-caption d-md-block">
-            <h1>Reliable & express <br> logistics solutions</h1>
+            <h1 class="mb-3 fw-bold custom-font-size">Reliable & express <br> logistics solutions</h1>
            <a class="primary-btn md text-white bg-color text-uppercase text-decoration-none fw-medium" href="/"><span> get started</span></a>
           </div>
         </div>
         <div class="carousel-item carousel-item2">
           <div class="carousel-overlay"></div>
           <div class="carousel-caption d-md-block">
-            <h1>Transport your <br> cargo everywhere</h1>
+            <h1 class="mb-3 fw-bold custom-font-size">Transport your <br> cargo everywhere</h1>
            <a class="primary-btn md text-white bg-color text-uppercase text-decoration-none fw-medium" href="/"><span> get started</span></a>
 
           </div>
@@ -167,7 +167,7 @@
         <div class="carousel-item carousel-item3">
           <div class="carousel-overlay"></div>
           <div class="carousel-caption d-md-block">
-            <h1>Provide simple <br> warehousing</h1>
+            <h1 class="mb-3 fw-bold custom-font-size">Provide simple <br> warehousing</h1>
 
            <a class="primary-btn md text-white bg-color text-uppercase text-decoration-none fw-medium" href="/"><span> get started</span></a>
           </div>
@@ -367,7 +367,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-8 col-md-6 col-xl-3 mt-4 mx-auto test">
+        <div class="col-12 col-sm-8 col-md-6 col-xl-3 mt-4 mx-auto">
           <div class="card-style04">
             <img src="./images/service-14.jpg" alt="Card Image">
             <div class="opacity-light"></div>
@@ -728,7 +728,6 @@
     </div>
   </footer>
   <!-- Footer-end -->
-   <!-- progress bar -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
@@ -741,14 +740,17 @@
   </script>
   <script>
     window.addEventListener("scroll", function () {
-      const header = document.querySelector("header");
-      if (window.scrollY > 50) {
-        header.classList.add("scrolled");
-      } else {
-        header.classList.remove("scrolled");
-      }
+        const header = document.querySelector("header");
+        const logo = document.querySelector(".navbar-brand img");
+        if (window.scrollY > 50) {
+            header.classList.add("scrolled");
+            logo.src = "./images/Logo2.png";
+        } else {
+            header.classList.remove("scrolled");
+            logo.src = "./images/Logo.png";
+        }
     });
-  </script>
+</script>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const elements = document.querySelectorAll(".hidden");
@@ -801,5 +803,4 @@
     setInterval(changeSlide, 3000);
   </script>
 </body>
-
 </html>
