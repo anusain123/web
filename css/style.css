@@ -51,8 +51,14 @@ color:#0f313a;
 .custom-font-size {
   font-size: 5rem;
 }
+.custom-font-size1 {
+  font-size: 4rem;
+}
 .bg-none {
   background: none !important;
+}
+.display-5 {
+  font-size: 44px;
 }
 /* header start */
 header{
@@ -671,3 +677,29 @@ header.scrolled {
     justify-content: center;
     transition: opacity 0.3s ease-in-out;
 }
+/* About Company */
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+.overlay-image {
+  position: absolute;
+  top: 40%;
+  left: 86%;
+  transform: translateX(-50%);
+  width: 61% !important;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+img.second-image{
+  position: absolute;
+    left: 39%;
+    top: 14%;
+}
+.main-sec .right-sec{
+  margin: 0px 0px 0px 8.3rem;
+}
+.section-title h2{
+  font-size: 51px;
+}
+/* About Company */
