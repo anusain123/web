@@ -74,7 +74,6 @@ header{
     transition-duration: 0.5s;
 }
 .primary-btn {
-    border-radius: 4px;
     font-size: 14px;
     padding: 13px 27px !important;
     display: inline-block;
@@ -295,7 +294,7 @@ header.scrolled {
 .card-style04 {
     position: relative;
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: 5px;
     transition: transform 0.3s ease, background-size 0.3s ease;
   }
   .card-style04:hover {
@@ -680,26 +679,209 @@ header.scrolled {
 /* About Company */
 .image-container {
   position: relative;
+  display: inline-block;
+}
+
+.main-image {
   width: 100%;
   max-width: 500px;
 }
-.overlay-image {
+.second-image {
   position: absolute;
-  top: 40%;
-  left: 86%;
-  transform: translateX(-50%);
-  width: 61% !important;
+  width: 85%;
+  top: 75%;
+  left: 100%;
+  transform: translate(-50%, -50%);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
-img.second-image{
-  position: absolute;
-    left: 39%;
-    top: 14%;
+.main-sec .right-sec {
+  padding-left: 2rem;
 }
-.main-sec .right-sec{
-  margin: 0px 0px 0px 8.3rem;
-}
-.section-title h2{
-  font-size: 51px;
+
+.section-title h2 {
+  font-size: 45px;
 }
 /* About Company */
+/* Logistics Services */
+.service-img img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+.service-card:hover .service-img img {
+  transform: scale(1.05);
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(210deg, rgba(15, 49, 58, 0.77) 0%, rgb(15, 49, 58) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+.service-card:hover .overlay {
+  opacity: 1;
+}
+.service-title {
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease-in-out;
+}
+.service-title::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  background: #f94735;
+  bottom: -5px;
+  left: 0%;
+  transition: width 0.3s ease-in-out;
+}
+.service-card:hover .service-title::after {
+  width: 100%;
+}
+ .slick-dots {
+  position: absolute;
+  bottom: -30px;
+  left: 3%;
+  transform: translateX(-50%);
+  display: flex !important;
+  justify-content: center;
+}
+.slick-dots li {
+  display: none !important;
+}
+.slick-dots li:nth-child(1),
+.slick-dots li:nth-child(2) {
+  display: inline-block !important;
+}
+.slick-dots li:nth-child(1) button {
+  background-color: #f94735 !important; 
+  border-radius: 50%;
+    height: 15px;
+    width: 15px;
+}
+.slick-dots li:nth-child(2) button {
+  background-color: #e0e5e6 !important;
+  border-radius: 50%;
+    height: 15px;
+    width: 15px;
+}
+/* Logistics Services */
+/* counter-sec-start */
+.stats-section {
+  position: relative;
+  background-image: url('../images/bg-06.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 120px 0px 120px 0px;
+}
+
+.stats-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0f313a;
+  opacity: 0.8;
+}
+.icon-box {
+  width: 95px;
+  height: 85px;
+  background: #f94735;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+}
+@keyframes slideInUp {
+  0% {
+      transform: translateY(50px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+.stat-box {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-in-out;
+}
+.stat-box.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* counter-sec-end */
+/*  */
+.left-sec{
+  padding: 0rem 0rem 0rem 5.4rem;
+}
+.left-sec .left-box {
+  position: absolute;
+  left: 30px;
+  bottom: 85px;
+  width: 230px;
+  background-color: #0f313a;
+  animation: float 2s linear 0.5s infinite alternate both;
+  -webkit-box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+  -webkit-transition: all 350ms cubic-bezier(0.37, 0, 0.63, 1);
+  transition: all 350ms cubic-bezier(0.37, 0, 0.63, 1);
+  text-align: center;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+.left-sec .left-box .inner-box {
+  top: -1px;
+  margin-bottom: 15px;
+  padding-bottom: 35px;
+  padding-top: 35px;
+  background-color: #fff;
+  position: relative;
+}
+.left-sec .left-box .inner-box h1 {
+  letter-spacing: -3px;
+  color: #0f313a;
+  font-size: 4.375rem;
+  line-height: 4.375rem;
+  word-spacing: -2px;
+}
+.left-sec .fas.fa-star {
+  letter-spacing: -4px;
+}
+.left-sec .left-box .inner-box .box-tag {
+  padding: 0 20px;
+  border-radius: 100px;
+  background-color: #f94735;
+  -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+  -webkit-transition: all 350mscubic-bezier(0.37, 0, 0.63, 1);
+  transition: all 350mscubic-bezier(0.37, 0, 0.63, 1);
+  color: #fff;
+  line-height: 30px;
+  font-size: 12px;
+  display: inline-block;
+  text-transform: uppercase;
+  margin-top: 3px;
+}
+/*  */

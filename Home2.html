@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@100..900&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/media.css">
   <link rel="icon" type="image/x-icon" href="./images/fevicon.png">
@@ -33,43 +35,254 @@
     </div>
 </section>    
 <!-- Banner end -->
- <!--About Company  -->
- <div class="container my-5 main-sec">
-    <div class="row align-items-center">
+ <!--About Company start -->
+ <div class="container my-lg-5 px-lg-5 main-sec py-5">
+    <div class="row">
         <div class="col-md-6 p-0 text-center text-md-start">
-            <div class="position-relative d-inline-block">
-                <img src="./images/about-01.jpg" class="img-fluid" alt="Truck">
-                <img src="./images/about-02.jpg" class="img-fluid shadow-lg second-image" style="width: 80%; transform: translate(20%, 20%);" alt="Warehouse">
+            <div class="position-relative d-inline-block image-container">
+                <img src="./images/about-01.jpg" class="img-fluid main-image" alt="Truck">
+                <img src="./images/about-02.jpg" class="img-fluid shadow-lg overlay-image second-image" alt="Warehouse">
             </div>
         </div>
         <div class="col-md-6">
-         <div class="right-sec hidden animate-move-up">
-            <div class="section-title mb-3">
-                <h2 class="display-5 fw-bolder heading-color">About <span class="primary-color">Company</span></h2>
+            <div class="right-sec hidden animate-move-up">
+                <div class="section-title mb-3">
+                    <h2 class="display-5 fw-bolder heading-color">About <span class="primary-color">Company</span></h2>
+                </div>
+                <p class="mb-4 text-light fs-6 lh-lg">We pride ourselves on providing the best transport and shipping services available worldwide.</p>
+                <div class="d-flex align-items-center flex-wrap">
+                    <a class="primary-btn md text-white bg-color text-uppercase text-decoration-none fw-medium" href="/">
+                        <span>More About</span>
+                    </a>
+                    <a href="/" class="link d-flex align-items-center text-uppercase text-light fw-semibold display-30 text-primary-hover ms-3">
+                        Discover More
+                    </a>
+                </div>
+                <div class="row align-items-center mt-4 text-center text-md-start" id="counter-section">
+                    <div class="col-3">
+                        <h2 class="heading-color custom-font-size1 fw-bold border-end pe-3" id="rating-counter">0</h2>
+                    </div>
+                    <div class="col-9">
+                        <div class="primary-color">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="fw-semibold display-32 text-light"><span id="reviews-counter">0</span>+ Genuine Ratings</p>
+                    </div>
+                </div>
             </div>
-            <p class="mb-4 w-75 text-light fs-6 lh-2">We pride ourselves on providing the best transport and shipping services available allover the world. Our skilled personnel.</p>
-            <div class="d-flex align-items-center">
-                <a class="primary-btn md text-white bg-color text-uppercase text-decoration-none fw-medium" href="/"><span>More About</span></a>
-                <a href="/" class="link align-items-center d-flex text-uppercase text-light fw-semibold display-30 text-primary-hover ms-3">Discover More</a>
-            </div>
-           <div class="row align-items-center mt-4" id="counter-section">
-    <div class="col-4 text-center">
-        <h2 class="heading-color custom-font-size1 fw-bold border-end" id="rating-counter">0</h2>
-    </div>
-    <div class="col-8">
-        <div class="primary-color">
-            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-        </div>
-        <p class="fw-semibold display-32 text-light"><span id="reviews-counter">0</span>+ Genuine Ratings</p>
-         </div>
-        </div>
-         </div>
         </div>
     </div>
 </div>
 
-<!--About Company -->
+<!--About Company end-->
+<!-- Logistics-Services-start -->
+<section class="py-5">
+    <div class="container my-5">
+        <h2 class="display-5 fw-bolder heading-color ms-2 heading">
+            Logistics <span class="primary-color">Services</span>
+        </h2>
+        <div class="row">
+            <div class="col-12 my-5">
+                <div class="wrapper">
+                    <div class="my-slider">
+                        <!-- Card 1 -->
+                        <div class="card service-card mx-3 border-0">
+                            <div class="service-img position-relative overflow-hidden">
+                              <a href="/">  <img src="./images/service-01.jpg" alt="Rail Freight"></a>
+                                <div class="overlay">
+                                    <i class="fas fa-arrow-right fs-1 text-white"></i>
+                                </div>
+                            </div>
+                            <div class="card-body px-0 py-3">
+                                <h3>
+                                    <a href="/" class=" display-32 service-title heading-color text-decoration-none text-primary-hover fw-semibold display-32 ">Warehousing</a>
+                                </h3>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="card service-card mx-3 border-0">
+                            <div class="service-img position-relative overflow-hidden">
+                                <img src="./images/service-02.jpg" alt="Rail Freight">
+                                <div class="overlay">
+                                    <i class="fas fa-arrow-right fs-1 text-white"></i>
+                                </div>
+                            </div>
+                            <div class="card-body px-0 py-3">
+                                <h3>
+                                    <a href="/" class=" display-32 service-title heading-color text-decoration-none text-primary-hover fw-semibold display-32">Air Freight</a>
+                                </h3>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="card service-card mx-3 border-0">
+                            <div class="service-img position-relative overflow-hidden">
+                                <img src="./images/service-03.jpg" alt="Rail Freight">
+                                <div class="overlay">
+                                    <i class="fas fa-arrow-right fs-1 text-white"></i>
+                                </div>
+                            </div>
+                            <div class="card-body px-0 py-3">
+                                <h3>
+                                    <a href="/" class=" display-32 service-title heading-color text-decoration-none text-primary-hover fw-semibold display-32">Ocen Freight</a>
+                                </h3>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                         <div class="card service-card mx-3 border-0">
+                            <div class="service-img position-relative overflow-hidden">
+                                <img src="./images/service-04.jpg" alt="Rail Freight">
+                                <div class="overlay">
+                                    <i class="fas fa-arrow-right fs-1 text-white"></i>
+                                </div>
+                            </div>
+                            <div class="card-body px-0 py-3">
+                                <h3>
+                                    <a href="/" class=" display-32 service-title heading-color text-decoration-none text-primary-hover fw-semibold display-32">Road Freight</a>
+                                </h3>
+                            </div>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="card service-card mx-3 border-0">
+                            <div class="service-img position-relative overflow-hidden">
+                                <img src="./images/service-05.jpg" alt="Rail Freight">
+                                <div class="overlay">
+                                    <i class="fas fa-arrow-right fs-1 text-white"></i>
+                                </div>
+                            </div>
+                            <div class="card-body px-0 py-3">
+                                <h3>
+                                    <a href="/" class=" display-32 service-title heading-color text-decoration-none text-primary-hover fw-semibold display-32 ">Rail Freight</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  <!-- Logistics-Services-end -->
+   <!--Counter-sec-start-->
+   <section class="stats-section">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="stats-grid d-flex justify-content-around text-center flex-wrap">
+            <div class="stat-box text-white z-1">
+                <div class="icon-box fs-5 text-white">
+                    <img src="./images/icon-14.png" alt="" width="54px">
+                </div>
+                <h5 class="counter display-5 fw-bolder mb-0" data-target="31">0</h5>
+                <p class="display-32 fw-bolder">+ Years of Experience</p>
+            </div>
+
+            <div class="stat-box text-white z-1">
+                <div class="icon-box fs-5">
+                    <img src="./images/icon-15.png" alt="" width="54px">
+
+                </div>
+                <h5 class="counter display-5 fw-bolder mb-0" data-target="573">0</h5>
+                <p class="display-32 fw-bolder"> + Cities Served Worldwide</p>
+            </div>
+
+            <div class="stat-box text-white z-1">
+                <div class="icon-box fs-5">
+                    <img src="./images/icon-16.png" alt="" width="54px">
+
+                </div>
+                <h5 class="counter display-5 fw-bolder mb-0" data-target="426">0</h5>
+                <p class="display-32 fw-bolder"> + Satisfied Clients</p>
+            </div>
+
+            <div class="stat-box text-white z-1">
+                <div class="icon-box fs-5">
+                    <img src="./images/icon-17.png" alt="" width="54px">
+
+                </div>
+                <h5 class="counter display-5 fw-bolder mb-0" data-target="40">0</h5>
+                <p class="display-32 fw-bolder"> + Company We Help</p>
+            </div>
+        </div>
+    </div>
+</section>
+  <!-- Counter-sec-end-->
+   <!-- Custom Feedback start -->
+<section>
+    <div class="container">
+        <div class="row mt-5">
+        <div class="col-7 left-sec position-relative">
+         <div class="testimonial-image ">
+           <img src="./images/testimonial-01.jpg" alt="" width="90%">
+         </div>
+         <div class="left-box">
+            <div class="inner-box">
+            <h1 class="fw-bolder">4.28</h1>
+            <div><i class="fas fa-star primary-color">&nbsp;</i><i class="fas fa-star primary-color">&nbsp;</i><i class="fas fa-star primary-color">&nbsp;</i><i class="fas fa-star primary-color">&nbsp;</i><i class="fas fa-star primary-color">&nbsp;</i></div>
+            <span class="text-dark fw-bolder lh-lg">2467 Reviews</span>
+            <div class="box-tag">Excellent score</div>
+            </div>
+            <img decoding="async" class="mb-4" src="./images/11.png" alt="...">
+            </div>
+        </div>
+        <div class="col-5 d-flex align-items-center">
+            <h2 class="display-5 fw-bolder heading-color ms-2 heading">
+                Customers <span class="primary-color">Feedback</span>
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <div class="testimonial-card">
+                            <div class="testimonial-img">
+                              <img src="./images/avatar-05.jpg" alt="User 1">
+                            </div>
+                            <div class="testimonial-text">
+                              <p class=" w-lg-85 text-light">"It fits our needs perfectly. I am completely blown away. Very easy
+                                to use. Nice work on your cargo. Thanks cargo! Cargo has got everything i need."</p>
+                              <h4 class="fs-6 heading-color text-uppercase fw-bolder mb-0">Dennis Bulger</h4>
+                              <span class="text-muted small text-uppercase display-31 text-light">Crew Supervisor</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="testimonial-card">
+                            <div class="testimonial-img">
+                              <img src="./images/avatar-06.jpg" alt="User 2">
+                            </div>
+                            <div class="testimonial-text">
+                              <p class="text-light">"I love your system. I have gotten at least 50 times the value from cargo. We
+                                have no regrets! I will recommend you to my colleagues."</p>
+                              <h4 class="fs-6 heading-color text-uppercase fw-bolder mb-0">John Horrocks</h4>
+                              <span class="text-muted small text-uppercase display-31 text-light">Loadmaster</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="testimonial-card">
+                            <div class="testimonial-img">
+                              <img src="./images/avatar-07.jpg" alt="User 3">
+                            </div>
+                            <div class="testimonial-text">
+                              <p class="text-light">"It really saves me time and effort. Cargo is exactly what our business has
+                                been lacking. I will let my mum know about this, she could really make use of cargo!"</p>
+                              <h4 class="fs-6 heading-color text-uppercase fw-bolder mb-0">Kristin Dixon</h4>
+                              <span class="text-muted small text-uppercase display-31 text-light">Relations Specialistr</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </h2>
+        </div>        
+        </div>
+    </div>
+</section>
+  <!-- Custom Feedback end -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <script>
     function animateCounter(id, start, end, duration) {
         let range = end - start;
@@ -113,6 +326,73 @@
     }, { threshold: 1.0 }); 
 
     observer.observe(document.getElementById("counter-section"));
+</script>
+
+
+<script>
+$(document).ready(function(){
+    $('.my-slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        dots: true,
+        arrows: false,
+        infinite: true,
+        responsive: [
+            { breakpoint: 1024, settings: { slidesToShow: 2 } },
+            { breakpoint: 768, settings: { slidesToShow: 1 } }
+        ]
+    });
+
+    setTimeout(function(){
+        $('.slick-dots li').hide();
+        $('.slick-dots li:nth-child(1), .slick-dots li:nth-child(2)').show();
+    }, 500);
+});
+    </script>
+
+   <script>
+   document.addEventListener("DOMContentLoaded", function () {
+    const statBoxes = document.querySelectorAll(".stat-box");
+    const counters = document.querySelectorAll(".counter");
+
+    const observer = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add("show"); 
+                        startCounter(entry.target.querySelector(".counter")); 
+                    }, index * 400); 
+                    observer.unobserve(entry.target); 
+                }
+            });
+        },
+        { threshold: 0.5 } 
+    );
+
+    statBoxes.forEach((box) => observer.observe(box));
+
+    function startCounter(counter) {
+        let target = +counter.getAttribute("data-target");
+        let count = 0;
+        let increment = target / 100;
+
+        const updateCounter = () => {
+            if (count < target) {
+                count += increment;
+                counter.innerText = Math.ceil(count);
+                setTimeout(updateCounter, 20);
+            } else {
+                counter.innerText = target;
+            }
+        };
+
+        updateCounter();
+    }
+});
+
 </script>
 </body>
 </html>
